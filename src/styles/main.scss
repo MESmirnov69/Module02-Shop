@@ -1,0 +1,16 @@
+$bg: #ff0;
+
+.box {
+    &__title  {
+        color: $bg;
+    }
+    &__image {
+    max-width: 200px;
+    }
+    &__svg {
+        fill: blueviolet;
+        &:hover {
+            fill: seagreen;
+        }
+    }
+}
