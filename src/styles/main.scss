@@ -56,6 +56,7 @@ body {
         background-size: 1.7rem 1.5rem;
         position: relative;
         border: 1px solid $orange;
+        cursor: pointer;
         &:hover {
             background-color: $green;
             border: 1px solid $green;
@@ -258,6 +259,11 @@ body {
     text-decoration: none;
     border-radius: 3.8rem;
     display: inline-block;
+    &_min {
+        font-size: 1.4rem;
+        padding: 2rem 3.4rem;
+        box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+    }
 }
 .offer  {
     background-image: url(/src/images/offer.png);
@@ -396,10 +402,28 @@ body {
             justify-content: space-between;
             align-items: center;
         }
+        &__cart {
+            display: block;
+            padding: 2.5rem 4.2rem;
+            box-shadow: 0px 1rem 2.5rem 1.5rem rgba(207, 92, 13, 0.2);
+            text-decoration: none;
+            border-radius: 3.8rem;
+            background-color: #d26a22;
+            border: 1px solid #d26a22;
+            color: #ffffff;
+            letter-spacing: 0.13rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        &__cart_min {
+            font-size: 1.4rem;
+            padding: 1.8rem 3.2rem;
+            box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+        }
     }
     &-pagination {
-            display: none;
-        }
+        display: none;
+    }
     &-button-next, &-button-prev {
             top: -60px;
             &:hover{
@@ -454,6 +478,9 @@ body {
         width: 46px;
         border: none;
         padding: 0;
+        &_min {
+            width: 33px;
+        }
     }
     }
 
@@ -573,6 +600,7 @@ body {
     }
     &__link {
         padding: 2.4rem 0;
+        text-decoration: none;
         border: 1px solid rgba($green, .5);
         color: rgba($green, .5);
         font-size: 1.8rem;
@@ -606,13 +634,14 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    position: relative;
     &__item {
+        box-sizing: border-box;
         border: 1px solid rgba($green, .4);
         border-radius: 2rem;
         padding: 2.7rem 3rem 3.8rem;
-        box-sizing: border-box;
         &:hover {
-            box-shadow: 0 0 0 2px rgba($green, .4) inset;
+            box-shadow: 0 0 0 2px rgba($green, 0.4) inset;
         }
     }
     &__cover {
@@ -624,7 +653,7 @@ body {
     }
     &__image {
         width: 100%;
-        min-width: 351px;
+        max-width: 351px;
         height: 100%;
         object-fit: contain;
     }
@@ -641,7 +670,7 @@ body {
         margin-top: 1.8rem;
         margin-bottom: 0;
         min-height: 61px;
-        max-width: 300px;
+        max-width: 256px;
         line-height: 1.5;
     }
     &__price {
