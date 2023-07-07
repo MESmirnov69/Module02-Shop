@@ -17,16 +17,20 @@ body {
 }
 .header {
     max-width: 1440px;
-    margin: 0 auto 4.7rem;
+    margin: 0 auto 4.8rem;
     padding: 4rem 15px 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5%;
+    gap: 8rem;
+    &__navigation {
+        flex-grow: 1;
+        margin-left: 4rem;
+    }
     &__nav {
         display: flex;
         list-style-type: none;
-        margin: 0 15rem 0 2rem;
+        margin: 0;
         padding-left: 0;
         gap: 4.8rem;
     }
@@ -39,10 +43,12 @@ body {
         }
     }
     &__tel {
+        flex-basis: 200px;
         font-size: 1.6rem;
         font-weight: 500;
         color: $green;
         text-decoration: none;
+        text-align: right;
         letter-spacing: .13rem;
         transition: .3s;
         &:hover {
@@ -51,7 +57,7 @@ body {
     }
     &__cart {
         display: block;
-        width: 4rem;
+        flex-basis: 4rem;
         height: 4rem;
         border-radius: 100%;
         background-color: $orange;
@@ -81,7 +87,7 @@ body {
     background-image: url(../images/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 12rem;
+    flex-basis: 12rem;
     height: 3.2rem;
     &_footer {
         flex-basis: 18rem;
@@ -136,7 +142,8 @@ body {
     }
     &__image {
        width: 92%;
-       filter: drop-shadow(5px 5px 5px #222);
+       border-radius: 100%;
+       animation: shadow 4s ease-in-out infinite;
     }
     &__text  {
         padding-top: 5rem;
@@ -197,8 +204,8 @@ body {
     }
     &__tomato {
         position: absolute;
-        bottom: 129px;
-        right: 87px;
+        bottom: 117px;
+        right: 95px;
         width: 11rem;
         z-index: -1;
     }
@@ -211,22 +218,22 @@ body {
     }
     &__pepper {
         position: absolute;
-        top: 408px;
-        left: 1px;
+        top: 399px;
+        left: 9px;
         width: 9rem;
         z-index: -1;
     }
     &__beans {
         position: absolute;
-        bottom: 166px;
-        left: -38px;
+        bottom: 153px;
+        left: -29px;
         width: 12rem;
         z-index: -1;
     }
     &__cucumber {
         position: absolute;
         top: 0px;
-        left: 654px;
+        left: 662px;
         width: 8.5rem;
         z-index: -1;
     }
@@ -757,6 +764,7 @@ body {
         background-size: cover;
         background-position: center center;
         opacity: .4;
+        cursor: pointer;
         transform: scale(1);
         transition: .3s;
         &:hover {
@@ -898,9 +906,9 @@ body {
     margin-top: 1.2rem;
    }
    &__docs {
-    color: rgba($green, .4);
     text-decoration: none;
     border-bottom: 1px solid #ecedec;
+    animation: rgb 3s ease-in-out infinite;
    }
 }
 footer {
@@ -968,6 +976,7 @@ footer {
     padding-left: 0;
     margin-top: 3rem;
     margin-bottom: 0;
+
     &__link {
         display: block;
         width: 4.6rem;
@@ -992,5 +1001,29 @@ footer {
     }
     &__fb {
         background-image: url(/src/images/fb.svg) ;
+        background-size: 2rem;
     }
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba($green, .5); 
+    }
+    50% {
+        box-shadow: 20px 20px 33px 0px rgba(39 48 15 / 50%);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($green, .5); 
+    }
+}
+@keyframes rgb {
+    0% {
+        color: rgba($green, .4);
+    }
+    50% {
+        color: rgba($green, .9);
+    }
+    100% {
+        color: rgba($green, .4);
+    }
+    
 }
