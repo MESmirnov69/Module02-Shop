@@ -9,6 +9,9 @@ html {
     font-size: 10px;
 }
 body {
+    background-image: url(/src/images/background.png);
+    background-size: cover;
+    background-position-x: center;
     font-size: 1.6rem;
     font-family: $font-jost;
 }
@@ -93,9 +96,6 @@ body {
     padding-right: 15px;
 }
 .main {
-    background-image: url(/src/images/main.png);
-    background-size: cover;
-    background-position-x: center;
     position: relative;
     padding-bottom: 189px;
     z-index: 0;
@@ -279,9 +279,6 @@ body {
     }
 }
 .offer  {
-    background-image: url(/src/images/offer.png);
-    background-size: cover;
-    background-position-x: center;
     background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 12.8rem;
@@ -505,9 +502,6 @@ body {
     }
 
 .about  {
-    background-image: url(/src/images/about.png);
-    background-size: cover;
-    background-position-x: center;
     padding-top: 3.7rem;
     padding-bottom: 10rem;
     &__box {
@@ -567,9 +561,6 @@ body {
         }    
 }
 .trends {
-    background-image: url(/src/images/trends.png);
-    background-size: cover;
-    background-position-x: center;
     padding-top: 4rem;
     padding-bottom: 8rem;
     &__text {
@@ -577,9 +568,6 @@ body {
     }
 }
 .catalog {
-    background-image: url(/src/images/catalog.png);
-    background-size: cover;
-    background-position-x: center;
     padding-top: 11rem;
     padding-bottom: 14rem;
     &__list {
@@ -719,9 +707,6 @@ body {
     }
 }
 .delivery {
-    background-image: url(/src/images/delivery.png);
-    background-size: cover;
-    background-position-x: center;
     padding-bottom: 8rem;
     &__box {
         display: flex;
@@ -924,9 +909,6 @@ footer {
     padding-bottom: 7rem;
 }
 .footer {
-    background-image: url(/src/images/footer-background.png);
-    background-size: cover;
-    background-position-x: center;
     &__box {
         display: flex;
         justify-content: space-between;
