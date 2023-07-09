@@ -686,6 +686,11 @@ body {
             font-size: 1.4rem;
             padding: 1.8rem 3.2rem;
             box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+            @media (max-width: $r_tab) {
+                font-size: 1rem;
+                padding: 2rem 2.5rem;
+                box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+            }
         }
     }
     &-pagination {
