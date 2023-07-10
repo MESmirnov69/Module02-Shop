@@ -40,6 +40,13 @@
                 <button href="#" class="header__cart">
                     <span class="header__counter">0</span>
                 </button>
+                <div class="header__dropdown" id="Notification">
+                    <div class="header__cover">
+                        <img class="header__img" src="/src/images/catalog/milk.png" alt="Молоко">
+                    </div>
+                    <p class="header__text">Вы добавили в корзину <a class="header__product" href="#">Молоко топленое</a></p>
+                    <button type="button" class="close" onclick="document.getElementById('Notification').style.visibility='hidden'"> </button>
+                </div>
             </div> 
         </header>
         <div class="container">
@@ -61,15 +68,33 @@
                 <div class="main__line">
                     <img class="main__image" src="./images/plate.png" alt="тарелка">
                 </div>
-                <button class="main__btn main__btn_1">
+                <button class="main__btn main__btn_1" onclick="document.getElementById('FoodOne').style.visibility='visible'">
                     <span class="main__food">Авокадо</span> 134руб
                 </button>
-                <button class="main__btn main__btn_2">
+                <div class="main__about main__about_1" id="FoodOne">
+                    <h3 class="main__title">Авокадо</h3>
+                    <p class="main__description">Авокадо Хасс, Свежий урожай, 1кг</p>
+                    <p class="main__price">134 руб/кг</p>
+                    <button class="close" onclick="document.getElementById('FoodOne').style.visibility='hidden'"></button>
+                </div> 
+                <button class="main__btn main__btn_2" onclick="document.getElementById('FoodTwo').style.visibility='visible'">
                     <span class="main__food">Картофель</span> 169руб
                 </button>
-                <button class="main__btn main__btn_3">
+                <div class="main__about main__about_2" id="FoodTwo">
+                    <h3 class="main__title">Картофель</h3>
+                    <p class="main__description">Картофель Молодой, Свежий урожай, 1кг</p>
+                    <p class="main__price">169 руб/кг</p>
+                    <button class="close" onclick="document.getElementById('FoodTwo').style.visibility='hidden'"></button>
+                </div>   
+                <button class="main__btn main__btn_3" onclick="document.getElementById('FoodThree').style.visibility='visible'">
                     <span class="main__food">Томаты</span> 215руб
                 </button>
+                <div class="main__about main__about_3" id="FoodThree">
+                    <h3 class="main__title">Томаты</h3>
+                    <p class="main__description">Премиум класса, Свежий урожай, 1кг</p>
+                    <p class="main__price">215 руб/кг</p>
+                    <button class="close" onclick="document.getElementById('FoodThree').style.visibility='hidden'"></button>
+                </div>
             </div>
             </div>
         </div>
@@ -192,7 +217,7 @@
                                 <input class="counter__input" type="text" value="1">
                                 <button class="counter__btn counter__plus"></button>
                             </div>
-                            <button class="swiper-slide__cart">В корзину</button>
+                            <button class="link">В корзину</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -210,7 +235,7 @@
                               <input class="counter__input" type="text" value="1">
                               <button class="counter__btn counter__plus"></button>
                           </div>
-                          <button class="swiper-slide__cart">В корзину</button>
+                          <button class="link">В корзину</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -228,7 +253,7 @@
                               <input class="counter__input" type="text" value="1">
                               <button class="counter__btn counter__plus"></button>
                           </div>
-                          <button class="swiper-slide__cart">В корзину</button>
+                          <button class="link">В корзину</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -246,7 +271,7 @@
                               <input class="counter__input" type="text" value="1">
                               <button class="counter__btn counter__plus"></button>
                           </div>
-                          <button class="swiper-slide__cart">В корзину</button>
+                          <button class="link">В корзину</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -264,7 +289,7 @@
                               <input class="counter__input" type="text" value="1">
                               <button class="counter__btn counter__plus"></button>
                           </div>
-                          <button class="swiper-slide__cart">В корзину</button>
+                          <button class="link">В корзину</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -282,7 +307,7 @@
                               <input class="counter__input" type="text" value="1">
                               <button class="counter__btn counter__plus"></button>
                           </div>
-                          <button class="swiper-slide__cart">В корзину</button>
+                          <button class="link">В корзину</button>
                         </div>
                       </div>
                     </div>
@@ -349,7 +374,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
                 <div class="catalog-grid__item">
@@ -371,7 +396,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
                 <div class="catalog-grid__item">
@@ -393,7 +418,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
                 <div class="catalog-grid__item">
@@ -415,7 +440,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
                 <div class="catalog-grid__item">
@@ -437,7 +462,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
                  <div class="catalog-grid__item">
@@ -459,7 +484,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                  </div>
                 <div class="catalog-grid__item">
@@ -481,7 +506,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                  </div>
                 <div class="catalog-grid__item">
@@ -503,7 +528,7 @@
                         <input type="text" value="1" class="counter__input counter__input_min">
                         <button class="counter__btn counter__btn_min counter__plus"></button>
                     </div>
-                    <button class="swiper-slide__cart swiper-slide__cart_min">В корзину</button>
+                    <button class="link link_min">В корзину</button>
                 </div>
                 </div>
             </div>
@@ -531,7 +556,6 @@
              </div>
         </div>
     </section>
-    <div class="footer">
     <section class="contact">
         <div class="container">
             <div class="contact-box">
@@ -555,7 +579,7 @@
                             <input class="card__input"  type="text" placeholder="Ваше имя">
                             <label class="card__label"  for="">Ваш телефон</label>
                             <input class="card__input" type="tel" placeholder="Ваш телефон">
-                            <button type="submit" class="swiper-slide__cart card__link">заказать звонок</button>
+                            <button type="submit" class="link card__link">заказать звонок</button>
                             <p class="card__check">Нажимая на кнопку вы подтверждаете свое согласие на обработку <a class="card__docs" href="#">персональных данных.</a></p>
                         </form>
                     </div>
@@ -613,6 +637,5 @@
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 </html>

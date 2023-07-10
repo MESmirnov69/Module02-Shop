@@ -74,3 +74,4 @@ var swiper = new Swiper(".categorySwiper", {
     clickable: true,
   },
 });
+
