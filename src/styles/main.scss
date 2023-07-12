@@ -22,6 +22,9 @@ $r_desk_full: 1750px;
 
 html {
     font-size: 10px;
+    @media (max-width: $r_tab) {
+        overflow-x: hidden;
+    }
     @media (max-width: $r_mob_500) {
         font-size: 8px;
     }
@@ -33,7 +36,9 @@ body {
     color: $green;
     font-size: 1.6rem;
     font-family: $font-jost;
-    overflow-x: hidden;
+    @media (max-width: $r_tab) {
+        overflow-x: hidden;
+    }
 }
 .header {
     max-width: 1440px;
