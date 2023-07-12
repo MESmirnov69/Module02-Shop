@@ -33,7 +33,7 @@ body {
     color: $green;
     font-size: 1.6rem;
     font-family: $font-jost;
-    /*overflow: hidden;*/ 
+    overflow-x: hidden;
 }
 .header {
     max-width: 1440px;
@@ -1591,6 +1591,7 @@ body {
             font-size: 1.6rem;
             display: flex;
             justify-content: space-between;
+            padding-left: 0;
         }
         @media (max-width: $r_mob_360) {
             margin-top: 2rem;
